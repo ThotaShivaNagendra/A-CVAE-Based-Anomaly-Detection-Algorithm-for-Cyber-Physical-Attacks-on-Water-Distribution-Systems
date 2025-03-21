@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<body>
+<head>
+    <meta charset="UTF-8">
+    <title>Remote User</title>
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+<style>
+      body{background: url("{% static 'bg.jpg' %}");
+	background-size:cover;
+	font-family: 'Russo One', sans-serif;
+	background-color: #000000;
+    }
+    h1{
+    color:white;
+    }
+.topnav {
+  overflow: hidden;
+  background-color: #812;
+}
+
+.topnav a {
+  float: left;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #8e4fd1;
+  color: white;
+}
+.style1 {color: #FF0000}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body>
+
+<h1 align="center" class="style1">A CVAE-Based Anomaly Detection Algorithm for Cyber Physical Attacks for Water Distribution Systems</h1>
+<div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-alerts">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,500,200" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+                <link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" /><div class="container py-5">
+    <div class="alert alert-success text-white font-weight-bold" role="alert">
+        <a  href="{% url 'Predict_Water_Distribution_Attacks' %}">PREDICT WATER DISTRIBUTION ATTACKS TYPE</a>||
+         <a href="{% url 'ViewYourProfile' %}">VIEW YOUR PROFILE</a>||
+         <a href="{% url 'index' %}">LOGOUT</a>
+    </div>
+  </div>
+</div>
+
+<div class="mainholder">
+{% block userblock %}
+{% endblock %}
+</div>
+</body>
+</html>
