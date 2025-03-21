@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load static %}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Register</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+  
+<style type="text/css">
+<!--
+.style5 {
+	font-size: 24px;
+	color: #FF0000;
+}
+.style12 {font-weight: bold}
+.style13 {font-size: 24px; color: #FF0000; font-weight: bold; }
+.style19 {color: #FFFF00; font-weight: bold; }
+.style22 {color: #FF0000; font-weight: bold; }
+.style23 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="menu_nav">
+        <p>&nbsp;</p>
+      </div>
+      <div class="mainbar">
+        <h1 align="center"><a href="index.html"><span class="content style5">A CVAE-Based Anomaly Detection Algorithm for Cyber Physical Attacks for Water Distribution Systems</span></a></h1>
+
+        <div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-alerts">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script><link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" /><div class="container py-5">
+  <div class="row">
+    <div class="alert alert-primary text-white font-weight-bold" role="alert">
+     <p align="center"><span class="active"><span class="style12"><a href="{% url 'index' %}">Home|  </a><a href="{% url 'login' %}">Remote User </a>|<a href="{% url 'serviceproviderlogin' %}"> Service Provider </a></span></span></p>
+    </div>
+    <div>
+</div>
+
+        <img src="{% static 'Banner.jpg'%}" width="1297" height="327" alt="" class="fl" />      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+        <div class="article">
+          <h2 align="center" class="style13">A CVAE-Based Anomaly Detection Algorithm for Cyber Physical Attacks for Water Distribution Systems</h2>
+          <div class="img">
+            <div align="center">
+              <div class="container-fluid">
+		<div>
+		  <div class="row">
+				<div >
+ 					<form role="form" method="POST" >
+						{% csrf_token %}
+						<fieldset>
+                            <p>{% load static %}
+				              <img src="{% static '/Register.jpg' %}" alt="My image"><br>
+					          <span class="style1 style22">REGISTER YOUR DETAILS HERE !!!</span>      </p>
+                        <table width="719" border="0" align="center">
+                        <tr>
+                          <td width="160" bgcolor="#FF0000"><span class="style19">Enter Username </span></td>
+                          <td width="173"><span class="form-group">
+                            <input type="text" name="username" id="username"  placeholder="User Name" required="required" />
+                          </span></td>
+                          <td width="147" bgcolor="#FFFF00"><span class="style22">Enter Password </span></td>
+                          <td width="211"><span class="form-group">
+                            <input type="password" name="password" id="password"  placeholder="Password" required="required" />
+                          </span></td>
+                        </tr>
+                        <tr>
+                          <td height="47" bgcolor="#FF0000"><span class="style19">Enter EMail Id </span></td>
+                          <td><span class="form-group">
+                            <input type="email" name="email" id="email"  placeholder="Enter Email " required="required" />
+                          </span></td>
+                          <td bgcolor="#FFFF00"><span class="style22">Enter Address </span></td>
+                          <td><span class="form-group">
+                            <textarea name="address" placeholder="Enter Address "></textarea>
+                          </span></td>
+                        </tr>
+                        <tr>
+                          <td height="37" bgcolor="#FF0000"><span class="style19">Enter Gender </span></td>
+                          <td><select name="gender">
+						  <option>----Select Gender ----</option>
+						  <option>Male</option>
+						  <option>Female</option>
+                          </select>
+                          </td>
+                          <td bgcolor="#FFFF00"><span class="style22">Enter Mobile Number </span></td>
+                          <td><span class="form-group">
+                            <input type="number" name="phoneno" id="phoneno"  placeholder="Enter Mobile Number" required="required" />
+                          </span></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#FF0000"><span class="style19">Enter Country Name </span></td>
+                          <td><span class="form-group">
+                            <input type="text" name="country" id="country"  placeholder="Enter Country Name" required="required" />
+                          </span></td>
+                          <td bgcolor="#FFFF00"><span class="style22">Enter State Name </span></td>
+                          <td><span class="form-group">
+                            <input type="text" name="state" id="state"  placeholder="Enter State Name" required="required" />
+                          </span></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#FF0000"><span class="style19">Enter City Name </span></td>
+                          <td><span class="form-group">
+                            <input type="text" name="city" id="city"  placeholder="Enter City Name" required="required" />
+                          </span></td>
+                          <td bgcolor="#FFFF00">&nbsp;</td>
+						  
+                          <td><input type="submit" class="btn btn-lg btn-primary" name="submit"  value="Register" /></td>
+                        </tr>
+                      </table>
+					  </fieldset>
+						<div><br>
+						  <button class="btn btn-lg ">
+ 					</form>
+					
+		    </div>
+					
+		  </div>
+
+			<table border="0" align="left" >
+                                    <tr><td width="246" bgcolor="#FF0000"><div align="center" class="style23"><span class="style6">Registered Status</span> :: {{object}}</div></td>
+
+          </table>
+
+<div class="mainbar">
+        
+
+        <div class="tab-content tab-space">
+            <div class="tab-pane active" id="preview-alerts">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script><link href="https://unpkg.com/soft-ui-design-system@1.0.1/assets/css/soft-design-system.min.css" rel="stylesheet" /><div class="container py-5">
+  <div class="row">
+    <div class="alert alert-primary text-white font-weight-bold" role="alert">
+     <p align="center"><span class="active"><span class="style12"><a href="{% url 'login' %}">Home|  </a><a href="{% url 'login' %}">Remote User </a>|<a href="{% url 'serviceproviderlogin' %}"> Service Provider </a></span></span></p>
+    </div>
+    <div>
+</div>
+				<div class="col-md-2">
+					<!-------null------>
+				</div>
+
+				<div class="col-md-5">				</div>
+			</div>
+		</div>
+
+	</div>
+            </div>
+          </div>
+          <div class="clr"></div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="searchform"></div>
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="fbg"></div>
+  <div class="footer"></div>
+</div>
+<div align=center></div>
+</body>
+</html>
